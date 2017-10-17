@@ -1,0 +1,17 @@
+{
+  "name": "log4js-v1.x-use",
+  "version": "1.0.0",
+  "description": "use about log4js v1.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "log4js"
+  ],
+  "author": "JiangBao",
+  "license": "MIT",
+  "dependencies": {
+    "log4js": "^1.1.1"
+  }
+}

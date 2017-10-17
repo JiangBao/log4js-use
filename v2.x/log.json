@@ -1,0 +1,48 @@
+{
+  "appenders": {
+    "console": {
+      "type": "console"
+    },
+    "debugs": {
+      "type": "dateFile",
+      "filename": "logs/debug/debug.log"
+    },
+    "infos": {
+      "type": "dateFile",
+      "filename": "logs/info/info.log"
+    },
+    "errors": {
+      "type": "dateFile",
+      "filename": "logs/error/error.log"
+    },
+    "just-debugs": {
+      "type": "logLevelFilter",
+      "appender": "debugs",
+      "level": "debug",
+      "maxLevel": "debug"
+    },
+    "just-infos": {
+      "type": "logLevelFilter",
+      "appender": "infos",
+      "level": "info",
+      "maxLevel": "info"
+    },
+    "just-errors": {
+      "type": "logLevelFilter",
+      "appender": "errors",
+      "level": "error",
+      "maxLevel": "error"
+    }
+  },
+  "categories": {
+    "default": { 
+      "appenders": [
+        "console", 
+        "just-debugs", 
+        "just-infos",
+        "just-errors"
+      ], 
+      "level": "debug"
+    }
+  }
+}
